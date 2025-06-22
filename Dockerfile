@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
 RUN apt-get update && \
-    apt-get install -y espeak-ng && \
+    apt-get install -y espeak-ng ffmpeg && \
     apt-get clean
 
 WORKDIR /app
